@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Order - {{title}}</title>
+</head>
+<header>
+    <img src=https://thumbs.dreamstime.com/b/open-book-open-pages-o-book-isolated-white-background-139398545.jpg, alt="Test">
+    Book-Off
+</header>
+<body>
+    <h1>Customer's Orders</h1>
+        <div class=each_order>
+            <p>
+                <b>Name:</b> {{currentOrder.customer_name}} <br>
+                <b>Order date:</b> {{currentOrder.order_date}} <br>
+                <b>Quantity:</b> {{currentOrder.quantity}} <br>
+                <b>Title:</b> {{currentOrder.title}} <br>
+                <b>Author:</b> {{currentOrder.author}}
+            </p>
+        </div> 
+</body>
+</html>
